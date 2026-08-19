@@ -1,4 +1,4 @@
-cask "headroom" do
+cask "claude-headroom" do
   version "1.0.0"
   sha256 "ccb56a1fbb14f1111e1320d00b724bf2db7efdf8c7dedfee3c45396479ed8a27"
 
