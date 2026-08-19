@@ -7,7 +7,7 @@ cask "headroom" do
   desc "Menu bar app and widget for Claude plan limits, token usage, and cost"
   homepage "https://github.com/maximilianfalco/headroom"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Headroom.app"
 
@@ -19,7 +19,9 @@ cask "headroom" do
   end
 
   zap trash: [
+    "~/Library/Caches/app.headroom",
     "~/Library/Containers/app.headroom.Widget",
+    "~/Library/HTTPStorages/app.headroom",
     "~/Library/Preferences/app.headroom.plist",
   ]
 end
