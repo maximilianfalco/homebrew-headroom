@@ -3,10 +3,12 @@ cask "headroom-bar" do
   sha256 "d0f118e375753522862c1b1ced893b8ad098a84ab86efe55d16b368f8388112d"
 
   url "https://github.com/maximilianfalco/headroom/releases/download/v#{version}/Headroom.zip"
-  name "Headroom"
+  name "Headroom Bar"
   desc "Menu bar app and widget for Claude plan limits, token usage, and cost"
   homepage "https://github.com/maximilianfalco/headroom"
 
+  # The homebrew-cask "headroom" (extraheadroom.com) also installs Headroom.app.
+  conflicts_with cask: "headroom"
   depends_on macos: :sonoma
 
   app "Headroom.app"
